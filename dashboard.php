@@ -11,6 +11,7 @@ $email = $_SESSION['email'];
 $fichier_users = 'data/users.csv';
 $lignes = array_map('str_getcsv', file($fichier_users));
 
+// on parcourt les utilisateurs pour trouver l'ID de l'utilisateur connecté
 foreach ($lignes as $index => $ligne) {
     if ($index === 0) continue; // on saute la ligne d'en-tête
     if ($ligne[2] === $email) {
@@ -23,6 +24,7 @@ $fichier_abonnements = 'data/abonnements.csv';
 $lignes_abonnements = array_map('str_getcsv', file($fichier_abonnements));
 $thematiques = [];
 
+// on parcourt les abonnements pour trouver ceux de l'utilisateur
 foreach ($lignes_abonnements as $index => $ligne) {
     if ($index === 0) continue; // on saute la ligne d'en-tête
     if ($ligne[0] == $id) {
