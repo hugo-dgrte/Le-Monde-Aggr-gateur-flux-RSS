@@ -1,9 +1,6 @@
 /* ============================================================
-   Le Monde RSS — Styles
-   Direction artistique : presse française, typographie editoriale
-   ============================================================ */
-
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+Le Monde — Styles
+============================================================ */
 
 /* ─── Variables ─────────────────────────────────────────────── */
 :root {
@@ -476,9 +473,5 @@ body > div:not(.container):not(.card) a {
 
   .nav-bar { 
     padding: 0 1rem; flex-wrap: wrap; 
-  }
-
-  .filters { 
-    gap: 0; 
   }
 }
